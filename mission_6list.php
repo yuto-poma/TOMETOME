@@ -180,9 +180,7 @@ a:link, a:visited, a:hover, a:active {
 session_start();
 $email = $_SESSION['email'];
 
-$dsn = 'mysql:dbname=tb210891db;host=localhost';
-	$user = 'tb-210891';
-	$password = 'dX8Jufv2St';
+$dsn = ??;
 	
 	$pdo = new PDO($dsn, $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));//DBに接続
 	
