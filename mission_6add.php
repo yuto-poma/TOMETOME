@@ -1,9 +1,7 @@
 <?php
 session_start();
 if(isset($_POST['add'])){
-$dsn = 'mysql:dbname=tb210891db;host=localhost';
-	$user = 'tb-210891';
-	$password = 'dX8Jufv2St';
+$dsn = 
 	
 	$pdo = new PDO($dsn, $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));//DBに接続
 $sql = $pdo -> prepare("INSERT INTO firminfo(firmname, email,situation,date,hour,minitue,wish,link,adress,others) VALUES (:firmname,:email,:situation,:date,:hour,:minitue,:wish,:link,:adress,:others)");
